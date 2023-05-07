@@ -2,15 +2,16 @@
 export default defineNuxtConfig({
   ssr: false,
   app: {
+    baseURL: '/number-combos/',
     head: {
       titleTemplate: (titleChunk) => {
         return titleChunk ? `${titleChunk} | Number Combos` : 'Number Combos';
       },
       meta: [
-        { name: 'description', content: 'A number guessing game!' },
+        { name: 'description', content: 'A number-based puzzle game!' },
         { hid: 'og-type', property: 'og:type', content: 'website' },
         { hid: 'og-title', property: 'og:title', content: 'Number Combos' },
-        { hid: 'og-desc', property: 'og:description', content: 'A number guessing game!' },
+        { hid: 'og-desc', property: 'og:description', content: 'A number-based puzzle game!' },
         { hid: 'og-image', property: 'og:image', content: '/meta.jpg' }
       ],
       link: [{ rel: 'icon', type: 'image/png', href: 'favicon.png' }]
