@@ -204,7 +204,6 @@ export default {
       grid-template-columns: repeat(3, 1fr);
       gap: var(--base-gap);
       justify-items: center;
-      // height: calc(calc(var(--cell-height) * 2) + var(--base-gap));
 
       > button {
         height: var(--cell-height);
