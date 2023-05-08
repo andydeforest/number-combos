@@ -4,6 +4,8 @@
 
 Number combos is a math-based puzzle game inspired by [Digits](https://www.nytimes.com/games/digits).
 
+Try it out here: https://andydeforest.github.io/number-combos/
+
 
 ## Setup
 ```bash
