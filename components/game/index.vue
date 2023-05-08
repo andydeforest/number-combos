@@ -204,6 +204,7 @@ export default {
       grid-template-columns: repeat(3, 1fr);
       gap: var(--base-gap);
       justify-items: center;
+      height: calc(var(--cell-height) * 2);
     }
 
     &--explanation {

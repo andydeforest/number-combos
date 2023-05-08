@@ -1,7 +1,12 @@
 :root {
   // custom colors here
   --nc-button: #111;
-  
+  --cell-height: 20vw;
+
+  @include breakpoint(small) {
+    --cell-height: 10rem;
+  }
+
   // sizing
   --base-header-height: 75px;
   --base-footer-height: 150px;
