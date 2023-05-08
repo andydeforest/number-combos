@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+* {
+  touch-action: manipulation;
+}
+
 html {
   font-size: var(--root-font-size, 62.5%);
   -webkit-text-size-adjust: 100%;

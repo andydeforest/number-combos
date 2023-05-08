@@ -193,6 +193,10 @@ export default {
     display: flex;
     flex-direction: column;
     gap: var(--base-large-gap);
+
+    @include breakpoint(large) {
+      gap: var(--base-gap);
+    }
   
     h1 {
       text-align: center;
