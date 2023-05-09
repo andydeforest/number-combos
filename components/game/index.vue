@@ -1,5 +1,6 @@
 <template>
   <div class="game">
+    <GameSettings />
     <div class="game__container">
       <h1>
         {{ gameStore.target }}

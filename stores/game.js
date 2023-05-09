@@ -3,6 +3,7 @@ import { defineStore, acceptHMRUpdate } from 'pinia';
 export const gameStore = defineStore('game', {
   state: () => {
     return {
+      maxTarget: 100,
       inProgress: false,
       options: [],
       history: [],
@@ -11,11 +12,11 @@ export const gameStore = defineStore('game', {
     };
   },
   actions: {
-    generateGame(maxTarget = 100) {
+    generateGame() {
       this.inProgress = true;
       this.history = [];
-      const minTarget = parseInt(maxTarget * 0.6);
-      this.target = Math.floor(Math.random() * (maxTarget - minTarget + 1)) + minTarget;
+      const minTarget = parseInt(parseInt(this.maxTarget) * 0.6);
+      this.target = Math.floor(Math.random() * (parseInt(this.maxTarget) - minTarget + 1)) + minTarget;
       const options = [];
     
       while (options.length < 6) {
