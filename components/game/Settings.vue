@@ -25,7 +25,7 @@
           <input
             v-model="gameStore.maxTarget"
             type="range"
-            min="20"
+            min="100"
             max="1000"
           >
         </div>
