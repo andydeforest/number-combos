@@ -32,6 +32,11 @@
         <div>
           <strong>Max Target Value:</strong> {{ gameStore.maxTarget }}
         </div>
+        <div>
+          <p>
+            The max target value controls the maximum value that can be generated when starting a game. The higher the value, the more difficult (and potentially impossible) the game will be.
+          </p>
+        </div>
       </div>
     </UIModal>
   </div>
@@ -79,6 +84,7 @@ export default {
   &__modal {
     display: flex;
     flex-direction: column;
+    width: 80vw;
 
     &--heading {
       display: flex;
@@ -97,13 +103,17 @@ export default {
       }
     }
 
+    p {
+      margin-top: var(--base-gap);
+    }
+
     &--slider {
       display: flex;
       flex-direction: row;
       justify-content: center;
       margin-top: var(--base-gap);
       
-      input {
+      input[type=range] {
         width: 100%;
       }
     }

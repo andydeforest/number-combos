@@ -37,9 +37,12 @@ export default {
     background-color: #fff;
     padding: 1rem 2rem;
     border-radius: 1rem;
-    max-width: 80vw;
-    max-height: 80vh;
     overflow: auto;
+
+    @include breakpoint(medium) {
+      max-width: 80vw;
+      max-height: 80vh;
+    }
   }
 }
 </style>
